@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:peeco_final_project/ui/home.dart';
 
 void main() {
@@ -13,9 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Renewable Energy IEC',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
-        textTheme: GoogleFonts.ralewayTextTheme(),
+      theme: ThemeData.dark(
         useMaterial3: true,
       ),
       home: const Home(),
